@@ -19,9 +19,9 @@
             font-family: 'Gowun Dodum', sans-serif;
         }
 
-        .mytitle {
+        .title {
             width: 100%;
-            height: 300px;
+            height: 500px;
 
             display: flex;
             flex-direction: column;
@@ -31,32 +31,34 @@
             color: white;
 
             background-image: url("jihun.jpg");
-            background-position: center 70%;
+            background-position: center;
             background-size: cover;
         }
 
         .my {
             max-width: 500px;
-            /*width: 95%;*/
             margin: 20px auto 0px auto;
 
-            box-shadow: 0px 0px 3px 0px black;
+            box-shadow: 0px 0px 3px 0px gray;
             padding: 20px;
         }
 
-        .my > button {
-            margin-top: 20px;
-        }
-
-        .mycard {
-            width: 95%;
-            max-width: 500px;
-            margin: auto;
-        }
-
-        .mycard > .card {
+        .mybtn {
             margin-top: 10px;
-            margin-bottom: 10px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 10px;
+
+            border: 1px solid #eee;
+
+            max-width: 500px;
+            margin: 20px auto 0px auto;
 
         }
 
@@ -86,7 +88,7 @@
 </head>
 
 <body>
-<div class="mytitle">
+<div class="title">
     <h1>김지훈 팬명록</h1>
 </div>
 <div class="my">
@@ -98,37 +100,45 @@
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
         <label for="floatingTextarea">응원 댓글</label>
     </div>
-    <button type="button" class="btn btn-dark">응원 남기기</button>
+    <div class="mybtn">
+        <button type="button" class="btn btn-dark">응원 남기기</button>
+    </div>
 </div>
 
-<div class="mycard">
-    <div class="card">
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>사랑해</p>
-                <footer class="blockquote-footer">유진
-                </footer>
-            </blockquote>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>사랑해</p>
-                <footer class="blockquote-footer">유진
-                </footer>
-            </blockquote>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>사랑해</p>
-                <footer class="blockquote-footer">유진
-                </footer>
-            </blockquote>
-        </div>
+<div class="card">
+
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>사랑해</p>
+            <footer class="blockquote-footer">유진
+            </footer>
+        </blockquote>
     </div>
 </div>
+
+<div class="card">
+
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>사랑해</p>
+            <footer class="blockquote-footer">유진
+            </footer>
+        </blockquote>
+    </div>
+</div>
+
+<div class="card">
+
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>사랑해</p>
+            <footer class="blockquote-footer">유진
+            </footer>
+        </blockquote>
+    </div>
+</div>
+
+
 </body>
+
 </html>
